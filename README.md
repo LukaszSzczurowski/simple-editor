@@ -1,9 +1,10 @@
-# wtf-gulp-starter
+![screenshot simple-editor](github/rm.png)
 
-`npm install -g gulp-cli`
+# Simple-editor
+[Zapraszam do używania](https://lukaszszczurowski.github.io/simple-editor/)
 
-`npm install`
+## Jak działa Simple-editor
 
-`gulp`
-
-To publish your page using github pages use `npm run deploy`
+1.Simple-editor wykorzystuje LocalStorage przeglądarki.
+2.Po wpisaniu textu do textarea i wciśnięciu buttona 'Save' zapisuje text do LocalStorage.
+3.Po wciśnięciu (😁) buttona 'Load' wczytuje ostatnio zapisany text. 
