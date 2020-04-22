@@ -17,6 +17,28 @@ if ('serviceWorker' in navigator) {
 // place your code below
 
 
-console.log(`Hello world!`);
+
+
+const textAreaListener = document.querySelector('.content__textarea--js');
+
+//textAreaListener.addEventListener('keyup', (e)=>{
+ //localStorage.setItem('textareaValue', e.target.value);
+//});
+// if(localStorage.getItem('textareaValue')){
+//   textAreaListener.value = localStorage.getItem('textareaValue');
+// }
+const saveButton = document.querySelector('.content__saveButton--js');
+saveButton.addEventListener('click', (e)=>{
+    localStorage.setItem('textareaValue', textAreaListener.value);
+});
+
+const loadButton = document.querySelector('.content__loadButton--js');
+loadButton.addEventListener('mouseenter', (e)=>{
+  loadButton.innerHTML = '😁';
+});
+loadButton.addEventListener('click', (e)=>{
+  textAreaListener.value = localStorage.getItem('textareaValue');
+});
+
 
 
